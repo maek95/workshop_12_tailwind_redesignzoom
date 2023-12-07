@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+
+  <!-- script so I can use fontawesome icons -->
+  <script src="https://kit.fontawesome.com/bae1ca9465.js" crossorigin="anonymous"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;500;700;800&family=Martian+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+
+
+  <title>Vite App</title>
+</head>
+
+<body class="">
+
+
+
+  <div class="fixed z-50 bg-[rgba(255,255,255,0.97)] w-full flex justify-between p-5 border-solid border-[1px]">
+    <!-- header-container -->
+    <div class="flex items-center">
+      <img src="https://st2.zoom.us/static/6.3.17532/image/new/topNav/Zoom_logo.svg" alt="Zoom Logo">
+    </div>
+
+    <div class="font-semibold flex gap-4 items-center">
+      <nav>
+        <ul class="flex gap-4">
+          <li class="hidden md:flex">
+            <a class="font-semibold text-center cursor-pointer leading-5 py-3 px-4 text-[black] border-solid border-[1px] border-[black] rounded-3xl text-sm"
+              href="https://explore.zoom.us/en/contactsales/">Contact Sales</a>
+          </li>
+          <li class="hidden md:flex">
+            <a class="font-semibold text-center cursor-pointer leading-5 py-3 px-2 text-white bg-[black] border-solid border-[1px] border-[black] rounded-3xl text-sm"
+              href="https://zoom.us/signup">Sign Up Free</a>
+          </li>
+          <li class="flex">
+            <a class="font-semibold text-center cursor-pointer leading-5 py-3 px-2 text-[#0b5cff] border-solid border-[1px] border-[#0b5cff] rounded-3xl text-sm md:px-4"
+              href="https://zoom.us/signin#/login">Host Meeting</a>
+          </li>
+          <li class="flex">
+            <a class="font-semibold text-center cursor-pointer leading-5 py-3 px-2 text-white bg-[#0b5cff] border-solid border-[1px] border-[#0b5cff] rounded-3xl text-sm md:px-4 "
+              href="https://zoom.us/join">Join Meeting</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+
+  <!-- need to set padding since header section is Fixed -->
+  <main class="pt-[100px] md:pt-[115px]">
+    <!-- screen1 -->
+    <div class="">
+      <div class="flex flex-col md:flex-row ">
+
+        <div class="md:max-w-[50%] h-full mx-8"> <!-- left section -->
+          <!-- md:mt-[-40px] so we remove the leading-10 above the h1 (but keep it between lines) -->
+          <h1 class="text-center md:text-start leading-10 font-[Coolvetica] text-4xl lg:text-6xl md:leading-none">
+            <!-- add transition between effective, productive, collaborative? -->
+            AI that makes you more <span class="hidden">effective</span><span class="hidden">productive</span><span
+              class="text-[#0b5cff]">collaborative</span>
+          </h1>
+          </span>
+
+          <p class="mt-5 text-lg lg:text-xl">
+            Zoom AI Companion is your trusted digital assistant that empowers you. Included at no additional cost with
+            your paid Zoom user account.
+          </p>
+
+          <!-- links container -->
+          <div class="items-center md:items-start mt-5 flex flex-col gap-4 justify-evenly content-evenly">
+            <!-- underline for accessibility (color-blind)? -->
+            <a class="text-[#0b5cff] font-medium underline text-lg"
+              href="https://explore.zoom.us/en/ai-assistant/">Discover
+              AI
+              Companion</a>
+
+            <div class="">
+              <a class="md:mx-0 max-w-fit flex items-center border-[1px] box-border border-solid rounded-3xl p-1 hover:bg-[#9abbff] text-xs lg:text-sm"
+                href="https://www.zoom.com/en/lp/zoom-ai-whitepaper" target="_blank"> <!-- notice-wrapper -->
+                <span class="pr-2"> <!-- bell -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <!-- change fill="" to some color if you want... #0b5cff if blue -->
+                    <circle cx="10" cy="10" r="10" fill=""></circle>
+                    <g clip-path="url(#clip0_1345_66711)">
+                      <path
+                        d="M13.5 7.66675C13.5 6.73849 13.1313 5.84825 12.4749 5.19187C11.8185 4.5355 10.9283 4.16675 10 4.16675C9.07174 4.16675 8.1815 4.5355 7.52513 5.19187C6.86875 5.84825 6.5 6.73849 6.5 7.66675C6.5 11.7501 4.75 12.9167 4.75 12.9167H15.25C15.25 12.9167 13.5 11.7501 13.5 7.66675Z"
+                        stroke="#00031F" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M11.0091 15.2501C10.9065 15.4269 10.7593 15.5737 10.5822 15.6757C10.4051 15.7777 10.2043 15.8314 9.99989 15.8314C9.7955 15.8314 9.5947 15.7777 9.41759 15.6757C9.24048 15.5737 9.09328 15.4269 8.99072 15.2501"
+                        stroke="#00031F" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1345_66711">
+                        <rect width="14" height="14" fill="white" transform="translate(2.99976 3.00009)"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                <span class="flex pr-4 border-r-[1px] border-solid border-[#0b5cff]">
+                  Get Zoom's AI Security & Privacy whitepaper
+                </span>
+                <span class="pl-4 font-semibold flex text-[#0b5cff] items-center justify-center">
+                  Learn more
+                  <svg id="menuIconId" class="rotate-[270deg]" width="24" height="24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="m17 9.5-5 5-5-5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                      stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+              </a>
+            </div>
+
+            <!-- 0.375rem is half of text-lg line-height... i.e. extra space below Discover AI Companion -->
+            <a class="mt-[0.375rem] max-w-fit font-semibold text-center text-xl lg:text-2xl cursor-pointer leading-5 py-5 px-8 text-white bg-[#0b5cff] border-solid border-[1px] border-[#0b5cff] rounded-3xl box-border"
+              href="">Install Zoom</a>
+          </div>
+        </div>
+
+        <!-- right section -->
+        <!-- Ive kept some styles for mobile view if I decide to show the image in mobile view as well. -->
+        <div class="hidden md:flex mt-7 md:mt-0 md:max-w-[50%] md:justify-end md:items-center justify-center  ">
+          <div class="md:max-w-[80%] md:m-auto">
+            <img class="max-h-[400px] md:max-h-none rounded-3xl" src="images/zoom-laptop-image.png" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- screen2 -->
+    <div class="bg-[#00031f] mt-7 py-8 px-8 w-full flex flex-col items-start">
+      <h2 class="text-2xl font-bold text-white lg:text-4xl leading-none self-start ">
+        Flexible solutions for modern team collaboration
+      </h2>
+
+      <div class="flex my-5 md:my-12 self-start gap-2">
+        <a class="text-lg lg:text-xl text-center cursor-pointer leading-5 py-3 px-5 text-white bg-[rgba(113,160,236,0.25)] border-solid border-[1px] border-[#71a0ec] rounded-3xl"
+          href="">Zoom One</a>
+        <!-- not active -->
+        <a class="text-lg lg:text-xl  text-center cursor-pointer leading-5 py-3 px-5 text-white border-solid border-[1px] border-[#71a0ec] rounded-3xl"
+          href="">Developers</a>
+      </div>
+      <!-- <h2 class="flex md:hidden text-white text-xl mb-5 self-start md:self-center" >
+        Unified communication and collaboration platform
+      </h2> -->
+
+      <div class="flex w-full bg-[#00031f] md:bg-[rgba(113,160,236,0.25)] rounded-3xl md:py-4">
+        <div class="flex flex-col gap-4 md:w-[50%] ">
+          <ul
+            class="flex flex-col gap-3 my-auto bg-[rgba(113,160,236,0.25)] rounded-3xl px-4 py-4 md:py-0 md:bg-transparent">
+            <li>
+              <h2 class="text-white text-xl mb-5 self-start md:self-center lg:text-2xl">
+                Unified communication and collaboration platform
+              </h2>
+            </li>
+            <!-- mt-[-8px] to remove gap-2 from the top -->
+            <li class="flex items-center gap-2">
+              <img
+                src="https://file-paa.zoom.us/TWAE5vIoSyqnbwQ9r_H3zg/MS4yLoT3qtycfaKkPD_rMUSRdEwmZpFWI4d5R-gmGf12svDk/cc8733ef-6b23-4d15-acbb-dbc6217901d1.svg">
+              <a href="https://explore.zoom.us/en/products/meetings/" target="_blank"
+                class="text-white lg:text-lg">Virtual
+                Meetings</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img
+                src="https://file-paa.zoom.us/W0L51lMrQtWShqOeU10A2w/MS4yLkbW6YpwLWY7OEieFZe6irJUk7UZocX___gXO2FjPQiS/48f8ddec-ee22-4b98-9671-6256a830e110.svg">
+              <a href="https://explore.zoom.us/en/products/group-chat/" target="_blank"
+                class="text-white lg:text-lg">Team Chat</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img
+                src="https://file-paa.zoom.us/AY4XcMOGQmKCHp_Ihbx5UA/MS4yLvR4wOTWK4saf6-gSr3uAlUEkUkiMguA8axuYcPQMGph/74d37332-ab28-48d9-aa8b-8018819736a9.svg">
+              <a href="https://explore.zoom.us/en/products/zoom-phone/" target="_blank"
+                class="text-white lg:text-lg">VoIP Phone
+                System</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img
+                src="https://file-paa.zoom.us/d3dF9rgFTLS9E2TmZvCw1w/MS4yLuTLqT2yvfZZoo_hIn2MBli66KifOKbdCSsvmgxx84kL/e7989e66-118d-4304-9efe-963a9b8a99fb.svg">
+              <a href="https://explore.zoom.us/en/products/online-whiteboard/" target="_blank"
+                class="text-white lg:text-lg">Online
+                Whiteboard</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img
+                src="https://file-paa.zoom.us/YfjgdtTQSeWQZcj3Z8IkIQ/MS4yLlC_Kon4CpxR8jocxHAxj59zO-9MYgS0I-KCUl44M2s9/7d7e8546-5096-45c3-85d8-1bae62cb161f.svg">
+              <a href="https://explore.zoom.us/en/ai-assistant/" target="_blank" class="text-white lg:text-lg">AI
+                Companion</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img
+                src="https://file-paa.zoom.us/UZ0QN8-oQeutU3JTeEBhbg/MS4yLqB0XMdz6LyfwVXim2EivrpAur-85Kj9QWjARaVXMxDQ/daf9033e-71b6-4e31-bbd2-0568f6a0dad4.svg">
+              <a href="https://explore.zoom.us/en/products/email-calendar/" target="_blank"
+                class="text-white lg:text-lg">Email and
+                Calendar </a>
+            </li>
+            <li class="flex items-center gap-2">
+              <img
+                src="https://file-paa.zoom.us/9xN0-ByKRoGGM9sw2hWE9Q/MS4yLqXRbO-x95zSmr9JbTZ7DfxKHbEH9SCUK_g_hU9kDhv8/24bdcaf6-934b-40a4-a8ee-2cf34ece062c.svg">
+              <a href="https://explore.zoom.us/en/products/virtual-coworking-spaces/" target="_blank"
+                class="text-white lg:text-lg">Virtual Working Spaces</a>
+            </li>
+            <li class="flex items-center gap-2 pb-2">
+              <img
+                src="https://file-paa.zoom.us/4kjGeRMuRm6zGQgCusEmJg/MS4yLji-5jAfh61p2nCYcuFQwpvxMAKpA1lUotTEJY_ivR_7/dc3bbfac-bcb2-4e3e-baba-577dc13fa5c7.svg"
+                class="svgUrl">
+              <a href="https://explore.zoom.us/en/products/appointment-scheduler/" target="_blank"
+                class="text-white lg:text-lg">Appointment Scheduler</a>
+            </li>
+          </ul>
+
+        </div>
+
+
+        <div class="hidden md:flex w-[50%]">
+          <div class="flex items-center justify-center w-full lg:w-[90%]">
+            <img class="rounded-3xl" src="https://st1.zoom.us/static/6.3.17532/image/home2/img1.jpg" alt="">
+
+            <!-- <img class="hidden lg:flex" src="https://images1.welcomesoftware.com/assets/Zoom_One_Hero_Img.png/Zz1iN2E4M2EwYTE1YzkxMWVlYTAzNmZhMDFmYjVkYzQ5MA==?t=20231207114840"> -->
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- screen3 -->
+    <div class="flex flex-col py-8 px-8">
+
+      <div class="flex flex-col sm:flex-row mt-5 gap-4 md:gap-6">
+        <div class="flex flex-col sm:w-[50%] my-auto gap-4 ">
+          <h2 class="text-2xl lg:text-4xl font-bold">
+            Powering organizations across industries and geographies
+          </h2>
+          <p class="text-lg lg:text-xl">
+            Zoom helps consolidate communications, connect people, and collborate better together in the boardroom,
+            classroom, operating room, and everywhere in between.
+          </p>
+
+          <!-- underline for accessibility (color-blind)? -->
+          <a href="https://www.zoom.com/en/industry/" class="text-[#0b5cff] font-medium underline text-lg lg:text-xl">
+            Explore Industry Solutions
+          </a>
+        </div>
+
+        <div
+          class="grid grid-cols-[120px_120px_120px] grid-rows-[110px_110px] sm:grid-cols-[140px_140px] sm:grid-rows-[120px_120px_120px] lg:grid-cols-[220px_220px] lg:grid-rows-[140px_140px_140px]  gap-4 mx-auto">
+          <div
+            class="flex flex-col items-center text-center justify-center border-[1px] box-border rounded-xl border-[#b5d0f8] font-bold leading-tight cursor-pointer gap-1">
+            <svg width="44" height="29" viewBox="0 0 44 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M42.2592 8.68427L22.0007 16.3685L1.74219 8.68427L22.0007 1L42.2592 8.68427Z" stroke="#00053D"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M33.8757 11.8622L22 8.68372" stroke="#00053D" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path
+                d="M33.8737 19.162C34.6453 19.162 35.2708 18.5364 35.2708 17.7648C35.2708 16.9932 34.6453 16.3677 33.8737 16.3677C33.1021 16.3677 32.4766 16.9932 32.4766 17.7648C32.4766 18.5364 33.1021 19.162 33.8737 19.162Z"
+                stroke="#00053D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M33.8728 16.368V11.8622" stroke="#00053D" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path
+                d="M32.4766 27.5457C32.4766 21.7615 33.8737 19.1628 33.8737 19.1628C33.8737 19.1628 35.2708 21.7615 35.2708 27.5457H32.4766Z"
+                stroke="#00053D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M10.127 11.8622V22.6551C10.127 25.3586 15.4431 27.5451 22.0026 27.5451C26.6341 27.5451 30.63 26.4553 32.593 24.8626"
+                stroke="#00053D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            Education
+          </div>
+          <div
+            class="flex flex-col items-center text-center justify-center border-[1px] box-border rounded-xl border-[#b5d0f8] font-bold leading-tight cursor-pointer gap-1">
+            <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28.5001 24.4H1.5V28H28.5001V24.4Z" stroke="#00053D" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path d="M3.29883 13.6002V24.4003" stroke="#00053D" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path d="M8.69922 13.6002V24.4003" stroke="#00053D" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path d="M15 13.5999V24.3999" stroke="#00053D" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path d="M26.7012 13.6002V24.4003" stroke="#00053D" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path d="M21.3008 13.6002V24.4003" stroke="#00053D" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path d="M28.5001 10V13.6001H1.5V10L15.0001 1L28.5001 10Z" stroke="#00053D" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M7.99219 10.0005L15.0032 5.32947L22.0142 10.0005" stroke="#00053D" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            Government
+          </div>
+          <div
+            class="flex flex-col items-center text-center justify-center border-[1px] box-border rounded-xl border-[#b5d0f8] font-bold leading-tight cursor-pointer gap-1">
+            <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M27.4202 8.55999L16.0802 12.88L4.74023 8.55999L16.0802 4.23999L27.4202 8.55999Z" stroke="#00053D"
+                stroke-width="2" stroke-linejoin="round"></path>
+              <path d="M16.0801 12.88V28" stroke="#00053D" stroke-width="2" stroke-linejoin="round"></path>
+              <path d="M4.74 8.55994L1.5 11.7999L12.84 16.6599L16.08 12.8799L19.32 16.6599L30.66 11.7999L27.42 8.55994"
+                stroke="#00053D" stroke-width="2" stroke-linejoin="round"></path>
+              <path d="M16.08 4.24L12.84 1L1.5 5.31999L4.74 8.55999" stroke="#00053D" stroke-width="2"
+                stroke-linejoin="round"></path>
+              <path d="M16.0801 4.24L19.3201 1L30.6601 5.31999L27.4201 8.55999" stroke="#00053D" stroke-width="2"
+                stroke-linejoin="round"></path>
+              <path d="M4.74023 13.1879V23.68L16.0802 28L27.4202 23.68V13.1879" stroke="#00053D" stroke-width="2"
+                stroke-linejoin="round"></path>
+            </svg>
+            Manufacturing
+          </div>
+          <div
+            class="flex flex-col items-center text-center justify-center border-[1px] box-border rounded-xl border-[#b5d0f8] font-bold leading-tight cursor-pointer gap-1">
+            <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.4033 7.24011C9.47257 7.24011 7.62089 8.0071 6.25564 9.37235C4.89039 10.7376 4.1234 12.5893 4.1234 14.52V21.3112C4.12396 22.3113 3.73401 23.2722 3.03662 23.9891L1.19064 25.8975C1.10069 25.9868 1.03904 26.1005 1.01337 26.2246C0.987701 26.3487 0.99916 26.4776 1.04631 26.5952C1.09347 26.7128 1.17422 26.8139 1.2785 26.8859C1.38278 26.9578 1.50595 26.9975 1.63263 26.9999H26.374C26.5007 26.9975 26.6238 26.9578 26.7281 26.8859C26.8324 26.8139 26.9131 26.7128 26.9603 26.5952C27.0074 26.4776 27.0189 26.3487 26.9932 26.2246C26.9676 26.1005 26.9059 25.9868 26.816 25.8975L24.97 23.9891C24.2726 23.2722 23.8826 22.3113 23.8832 21.3112V14.52C23.8832 12.5893 23.1162 10.7376 21.751 9.37235C20.3857 8.0071 18.534 7.24011 16.6033 7.24011"
+                stroke="#00053D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M7 15.1999C7 13.8208 7.54785 12.4982 8.52303 11.523C9.49821 10.5478 10.8208 10 12.1999 10"
+                stroke="#00053D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M16.7777 7L18.8166 3.3325C18.939 3.08667 19.003 2.79623 18.9999 2.5C18.9999 2.10218 18.8828 1.72064 18.6745 1.43934C18.4661 1.15803 18.1835 1 17.8888 1C16.9166 1 16.9166 2.5 15.9444 2.5C14.9722 2.5 14.9722 1 13.9944 1C13.0166 1 13.0277 2.5 12.0555 2.5C11.0833 2.5 11.0833 1 10.1111 1C9.81644 1 9.53383 1.15803 9.32546 1.43934C9.11708 1.72064 9.00002 2.10218 9.00002 2.5C8.99857 2.79702 9.06448 3.08753 9.18891 3.3325L11.2222 7"
+                stroke="#00053D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M15.9808 15.001H13.4124C13.0878 14.989 12.7693 15.0868 12.514 15.2769C12.2587 15.467 12.0833 15.7369 12.0192 16.0383C11.9862 16.2192 11.9958 16.4049 12.0472 16.5819C12.0986 16.759 12.1906 16.9232 12.3167 17.0628C12.4428 17.2024 12.5998 17.314 12.7766 17.3896C12.9535 17.4653 13.1457 17.5031 13.3397 17.5004H14.5876C14.9122 17.4884 15.2307 17.5863 15.486 17.7763C15.7413 17.9664 15.9167 18.2363 15.9808 18.5377C16.0138 18.7187 16.0042 18.9043 15.9528 19.0814C15.9014 19.2585 15.8094 19.4226 15.6833 19.5622C15.5572 19.7019 15.4002 19.8134 15.2234 19.8891C15.0465 19.9647 14.8543 20.0025 14.6603 19.9999H12.0192"
+                stroke="#00053D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M14 13V15" stroke="#00053D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+              <path d="M14 20V22" stroke="#00053D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+            </svg>Financial Services
+          </div>
+          <div
+            class="flex flex-col items-center text-center justify-center border-[1px] box-border rounded-xl border-[#b5d0f8] font-bold leading-tight cursor-pointer gap-1">
+            <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M28.587 5.69543H2.76087C1.78837 5.69543 1 6.4838 1 7.4563V26.2389C1 27.2114 1.78837 27.9998 2.76087 27.9998H28.587C29.5595 27.9998 30.3478 27.2114 30.3478 26.2389V7.4563C30.3478 6.4838 29.5595 5.69543 28.587 5.69543Z"
+                stroke="#00053D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M11.5684 5.69565V2.17391C11.5684 1.86257 11.692 1.56398 11.9122 1.34383C12.1323 1.12368 12.4309 1 12.7423 1H18.6118C18.9232 1 19.2218 1.12368 19.4419 1.34383C19.6621 1.56398 19.7858 1.86257 19.7858 2.17391V5.69565"
+                stroke="#00053D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M21.9578 15.674C21.9578 15.1217 21.5101 14.674 20.9578 14.674H17.8491V11.5653C17.8491 11.013 17.4014 10.5653 16.8491 10.5653H14.5013C13.949 10.5653 13.5013 11.013 13.5013 11.5653V14.674H10.3926C9.84029 14.674 9.39258 15.1217 9.39258 15.674V18.0218C9.39258 18.5741 9.84029 19.0218 10.3926 19.0218H13.5013V22.1305C13.5013 22.6828 13.949 23.1305 14.5013 23.1305H16.8491C17.4014 23.1305 17.8491 22.6828 17.8491 22.1305V19.0218H20.9578C21.5101 19.0218 21.9578 18.5741 21.9578 18.0218V15.674Z"
+                stroke="#00053D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            Healthcare
+          </div>
+          <div
+            class="flex flex-col items-center text-center justify-center border-[1px] box-border rounded-xl border-[#b5d0f8] font-bold leading-tight cursor-pointer gap-1">
+            <svg width="40" height="29" viewBox="0 0 40 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.4165 27.3665L7.13346 19.0834C6.93265 18.8828 6.77333 18.6446 6.66464 18.3824C6.55594 18.1202 6.5 17.8392 6.5 17.5553C6.5 17.2715 6.55594 16.9904 6.66464 16.7282C6.77333 16.466 6.93265 16.2278 7.13346 16.0272L17.3658 5.79487C17.6693 5.491 18.0811 5.32008 18.5105 5.3197H28.1003C28.3868 5.3197 28.6614 5.43348 28.864 5.63601C29.0665 5.83853 29.1803 6.11322 29.1803 6.39963V15.9894C29.1799 16.4189 29.009 16.8307 28.7051 17.1342L18.4728 27.3665C18.2722 27.5673 18.0339 27.7266 17.7717 27.8353C17.5095 27.944 17.2285 28 16.9446 28C16.6608 28 16.3797 27.944 16.1175 27.8353C15.8553 27.7266 15.6171 27.5673 15.4165 27.3665Z"
+                stroke="#00053D" stroke-width="2" stroke-linejoin="round"></path>
+              <path d="M12.5176 18.2789L20.0771 10.7194" stroke="#00053D" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path d="M23.7802 14.4235L16.2207 21.983" stroke="#00053D" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path
+                d="M25.9414 8.55953V4.77977C25.9414 4.0322 26.1631 3.30143 26.5784 2.67985C26.9937 2.05828 27.5841 1.5738 28.2747 1.28772C28.9654 1.00164 29.7254 0.926785 30.4586 1.07263C31.1918 1.21847 31.8652 1.57847 32.3939 2.10708C32.9225 2.63569 33.2825 3.30917 33.4283 4.04238C33.5742 4.77558 33.4993 5.53555 33.2132 6.22622C32.9271 6.91688 32.4427 7.5072 31.8211 7.92252C31.1995 8.33785 30.4687 8.55953 29.7212 8.55953H29.1812"
+                stroke="#00053D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            Retail
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <footer> <!-- footer -->
+
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+
+</body>
+
+</html>

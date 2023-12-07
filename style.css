@@ -1,0 +1,22 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* .zoomImg {
+  background-image: url(https://st2.zoom.us/static/6.3.17532/image/new/topNav/Zoom_logo.svg);
+
+  height: 30px;
+  width: 120px;
+} */
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('assets/coolvetica\ rg.otf') format('opentype');
+ 
+}
+
+.hej {
+
+  grid-template-columns: 20px 20x;
+
+}
