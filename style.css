@@ -11,7 +11,7 @@
 
 @font-face { /* load in the font, applied in tailwind.config.js later! */
   font-family: 'Coolvetica';
-  src: url('assets/coolvetica\ rg.otf') format('opentype');
+  src: url('assets/coolvetica-rg.otf') format('opentype');
  
 }
 
