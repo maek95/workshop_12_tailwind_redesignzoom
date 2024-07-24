@@ -66,9 +66,9 @@
     <div class="min-h-screen pt-[88px] flex"> <!-- pt-[88px] due to header with a height of 88px -->
       <!-- screen1 HERO SECTION -->
        <!-- h-full wont work with min-h-screen on parent, needs to be min-h-full -->
-      <div class="pt-7 pb-7 min-h-full flex flex-col md:flex-row md:justify-evenly md:px-8 gap-4 bg-white-lightblue-gradient">
+      <div class="pt-7 pb-7 min-h-full flex flex-col md:flex-row md:justify-evenly md:px-8 gap-4 bg-white-lightblue-gradient w-full">
          <!-- left section -->
-        <div class="flex gap-5 justify-between flex-col h-full w-full px-8 md:px-0 sm:max-w-[80%] md:max-w-none">
+        <div class="flex gap-5 justify-between flex-col h-full w-full px-8 md:px-0  max-w-full sm:max-w-[80%] md:max-w-[50%]">
            <!-- header + text container + discover in left section  -->
           <div class=" flex flex-col justify-start gap-5">
             <h1 class="text-start leading-10 font-coolvetica text-4xl lg:text-6xl md:leading-none"> <!-- leading-10 mainly for space between lines...  but makes padding to header harder... -->
@@ -88,8 +88,8 @@
             href="https://explore.zoom.us/en/ai-assistant/">Discover AI Companion</a>
 
             <!-- 0.375rem is half of text-lg line-height... i.e. extra space below Discover AI Companion -->
-            <div class="w-fit max-w-full mt-[0.375rem]">
-              <a class="flex items-center border-[1px] box-border border-solid rounded-3xl p-1 hover:bg-[#9abbff] text-xs lg:text-sm"
+            <div class="max-w-[80%] w-fit mt-[0.375rem]">
+              <a class="flex items-center border-[1px] box-border border-solid rounded-3xl p-1 hover:bg-[#9abbff] text-xs lg:text-sm w-full"
                 href="https://www.zoom.com/en/lp/zoom-ai-whitepaper" target="_blank">
                 <span class="pr-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -110,10 +110,10 @@
                 <span class="flex-grow min-w-0 pr-4 border-r border-solid border-[#0b5cff] truncate">
                   Get Zoom's AI Security & Privacy whitepaper
                 </span>
-                <span class="pl-4 font-semibold flex-grow min-w-0 text-[#0b5cff] truncate">
+                <span class="pl-4 font-semibold flex-shrink-0 text-[#0b5cff]">
                   info
                 </span>
-                <span class="flex items-center justify-center">
+                <span class="flex items-center justify-center flex-shrink-0">
                   <svg id="menuIconId" class="rotate-[270deg]" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="m17 9.5-5 5-5-5" stroke="#0b5cff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
                       stroke-linejoin="round"/>
@@ -121,6 +121,8 @@
                 </span>
               </a>
             </div>
+            
+            
             
           </div>
 
@@ -134,7 +136,7 @@
         </div>
 
         <!-- right section -->
-        <div class="hidden md:flex relative md:mt-0 w-full  justify-center ">
+        <div class="hidden md:flex relative md:mt-0 w-full max-w-full md:max-w-[50%]  justify-center ">
           <div class="relative flex h-full items-center justify-center z-20 w-72 lg:w-96 "> <!-- -mt-7 because pt-7 from header... makes it not look centered... -->
             <img class="absolute md:mb-56  md:-mr-6 lg:-mr-24 max-h-[200px] lg:max-h-[250px]  rounded-3xl" src="images/zoom-laptop-image.png" alt="">
             <img class="absolute max-h-[200px] lg:max-h-[250px]  rounded-3xl" src="images/zoom-meeting-image.png" alt="">
