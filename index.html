@@ -221,8 +221,8 @@
             Unified communication and collaboration platform
           </h2>
         </div>
-        <div class="flex justify-center sm:justify-between w-full ">
-          <div class=" flex flex-col gap-4 lg:max-w-[50%]">
+        <div class="flex justify-center md:justify-normal w-full ">
+          <div class="w-auto md:w-[40%] flex flex-col gap-4 ">
             
             <ul
               class="flex flex-col gap-3 my-auto bg-[rgba(113,160,236,0.25)] rounded-3xl px-4 py-4 md:py-0 md:bg-transparent">
@@ -287,12 +287,14 @@
 
           </div>
 
-          <div class="hidden md:flex max-w-[50%] lg:max-w-[60%]   pr-12 lg:gap-0  items-center justify-center  "> <!-- gap-8 because, on the list on left side, the space between h2 and the rest of the list has mb-5 and a gap-3!  -->
+          <div class="hidden w-[60%] md:flex    pr-4 lg:gap-0  items-center justify-center  "> <!-- gap-8 because, on the list on left side, the space between h2 and the rest of the list has mb-5 and a gap-3!  -->
             <!--  <img class="border-solid border-4 border-white rounded-3xl" src="https://st1.zoom.us/static/6.3.17532/image/home2/img1.jpg" alt=""> -->
             <div class="flex gap-8 lg:gap-0  flex-col lg:flex-row justify-center items-center lg:max-w-full w-full  "> <!-- -mt-7 because pt-7 from header... makes it not look centered... -->
               
-            <img class="rounded-3xl h-auto max-h-[100px]  lg:max-w-[50%] lg:h-full lg:max-h-none lg:w-auto" src="images/zoom-ai-companion-example-image.png" alt="">
-            <img class="rounded-3xl max-h-[250px]  lg:w-auto lg:max-w-[50%] lg:h-full lg:max-h-none" src="https://st2.zoom.us/static/6.3.23592/image/home2/zoom_ai.png" alt="">
+            <!-- lg:max-w-[220px] so it doesnt grow to infinity -->
+            <img class="rounded-3xl h-auto max-h-[100px]  lg:h-full lg:max-h-none lg:w-auto lg:max-w-[220px]" src="images/zoom-ai-companion-example-image.png" alt="">
+            <!-- lg:max-w-[50%] to avoid picture going outside its container to the right. -->
+            <img class="rounded-3xl max-h-[250px]  lg:w-auto  lg:h-full lg:max-h-none lg:max-w-[50%]" src="https://st2.zoom.us/static/6.3.23592/image/home2/zoom_ai.png" alt="">
             </div>
 
             <!-- <img class="hidden lg:flex" src="https://images1.welcomesoftware.com/assets/Zoom_One_Hero_Img.png/Zz1iN2E4M2EwYTE1YzkxMWVlYTAzNmZhMDFmYjVkYzQ5MA==?t=20231207114840"> -->
