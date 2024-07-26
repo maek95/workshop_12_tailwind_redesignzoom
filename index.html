@@ -66,31 +66,35 @@
     <div class="min-h-screen pt-[88px] flex"> <!-- pt-[88px] due to header with a height of 88px -->
       <!-- screen1 HERO SECTION -->
        <!-- h-full wont work with min-h-screen on parent, needs to be min-h-full -->
-      <div class="pt-7 pb-7 min-h-full flex flex-col  md:flex-row md:justify-evenly md:px-8 gap-4 bg-white-lightblue-gradient w-full">
+      <div class="pt-7 pb-7 min-h-full flex flex-col  md:flex-row md:justify-evenly md:px-8 gap-4 bg-white-lightblue-gradient w-full ">
          <!-- left section and HERO on mobile -->
         <div class="flex gap-12 sm:gap-5 justify-between flex-col h-full w-full px-8 md:px-0  max-w-full sm:max-w-[80%] md:max-w-[50%]">
            <!-- header + text container + discover in left section  -->
-          <div class=" flex flex-col justify-center gap-5">
-            <h1 class="text-center sm:text-start leading-10 font-coolvetica text-4xl lg:text-6xl md:leading-none"> <!-- leading-10 mainly for space between lines...  but makes padding to header harder... -->
+          <div class="mx-auto sm:mx-0 items-center flex flex-col justify-center gap-5 max-w-full sm:max-w-none">
+            <h1 class="w-full  text-center sm:text-start leading-10 font-coolvetica text-4xl lg:text-6xl md:leading-none"> <!-- leading-10 mainly for space between lines...  but makes padding to header harder... -->
               <!-- add transition between effective, productive, collaborative? -->
               AI that makes you more <span class="hidden">effective</span><span class="hidden">productive</span><span
                 class="text-[#0b5cff]">collaborative</span>
             </h1>
 
             <div class="flex w-full justify-center sm:justify-start">
-
-              <p class=" text-lg text-center sm:text-start lg:text-xl max-w-[80%]">
+              <!-- set max-w-[80%] here as well, even though the parent already has max-w-[80%], so it doesnt extend too far away from the title above which wraps text early due to long words.. -->
+              <p class=" text-lg text-center sm:text-start lg:text-xl max-w-[70%]">
                 Zoom AI Companion is your trusted digital assistant that empowers you. Included at no additional cost with
                 your paid Zoom user account.
               </p>
             </div>
 
             <!-- underline for accessibility (color-blind)? -->  
-             <div class="flex w-full justify-center sm:justify-start">
-            <!-- w-fit, otherwise the link covers the whole container's width? -->
-               <a class="flex items-center justify-center w-fit gap-4 text-[#0b5cff] font-medium no-underline text-lg  hover:underline" 
+             <div class="flex //w-fit w-full  justify-center sm:justify-start ">
+            <!-- w-fit OR fixed width (w-96 same as install zoom and other info button), otherwise the link covers the whole container's width? -->
+               <a class="flex items-center justify-center w-full sm:w-96 max-w-[60%] sm:max-w-[80%] //sm:w-fit gap-4 text-[#0b5cff] font-medium no-underline text-lg lg:text-xl  hover:underline" 
                href="https://explore.zoom.us/en/ai-assistant/">
-               <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <!-- changed to img instead of svg so it matches those in screen2... ideally I should use svg instead for customization? -->
+               <img
+                  src="https://file-paa.zoom.us/YfjgdtTQSeWQZcj3Z8IkIQ/MS4yLlC_Kon4CpxR8jocxHAxj59zO-9MYgS0I-KCUl44M2s9/7d7e8546-5096-45c3-85d8-1bae62cb161f.svg">
+               <!-- shrink-0 to avoid the svg shrinking... :) -->
+              <!--  <svg class="shrink-0" width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M28 15C28 16.4971 27.8796 17.9651 27.6497 19.3965C26.8886 24.1351 23.1351 27.8886 18.3965 28.6497C16.965 28.8796 15.497 29 14 29C12.503 29 11.035 28.8796 9.60355 28.6497C4.86494 27.8886 1.11135 24.1351 0.350273 19.3965C0.120366 17.9651 0 16.4971 0 15C0 13.5029 0.120366 12.0349 0.350273 10.6035C1.11135 5.86489 4.86494 2.11135 9.60355 1.35027C11.035 1.12036 12.503 1 14 1C15.497 1 16.965 1.12036 18.3965 1.35027C23.1351 2.11135 26.8886 5.86489 27.6497 10.6035C27.8796 12.0349 28 13.5029 28 15Z" fill="#0B5CFF"></path>
                 <path d="M28 15C28 16.4971 27.8796 17.9651 27.6497 19.3965C26.8886 24.1351 23.1351 27.8886 18.3965 28.6497C16.965 28.8796 15.497 29 14 29C12.503 29 11.035 28.8796 9.60355 28.6497C4.86494 27.8886 1.11135 24.1351 0.350273 19.3965C0.120366 17.9651 0 16.4971 0 15C0 13.5029 0.120366 12.0349 0.350273 10.6035C1.11135 5.86489 4.86494 2.11135 9.60355 1.35027C11.035 1.12036 12.503 1 14 1C15.497 1 16.965 1.12036 18.3965 1.35027C23.1351 2.11135 26.8886 5.86489 27.6497 10.6035C27.8796 12.0349 28 13.5029 28 15Z" fill="url(#paint0_radial_918_8413)"></path>
                 <path d="M27.9999 15C27.9999 16.4971 27.8795 17.9651 27.6496 19.3965C26.8885 24.1351 23.135 27.8886 18.3964 28.6497C16.9649 28.8796 15.497 29 13.9999 29C12.5029 29 11.0349 28.8796 9.60349 28.6497C4.86484 27.8886 1.1113 24.1351 0.350223 19.3965C0.120316 17.965 0 16.4971 0 15C0 13.503 0.120316 12.0349 0.350223 10.6034C1.11135 5.86489 4.86489 2.11125 9.60349 1.35022C11.035 1.12032 12.5029 1 13.9999 1C15.497 1 16.965 1.12032 18.3964 1.35022C23.135 2.11125 26.8885 5.86489 27.6496 10.6034C27.8795 12.0349 27.9999 13.5029 27.9999 15Z" fill="url(#paint1_radial_918_8413)"></path>
@@ -111,11 +115,14 @@
                 <rect width="18" height="18" fill="white" transform="translate(5 6)"></rect>
                 </clipPath>
                 </defs>
-                </svg>
-                <span class="">
-
-                  Discover AI Companion
+                </svg> -->
+                <span class="block flex-grow md:hidden truncate ">
+                AI Companion
                 </span>
+                <!-- needs to block for truncate to work? -->
+                <span class="hidden  flex-grow md:block truncate">
+                  Discover AI Companion
+                 </span>
 
                 <span class="flex items-center -ml-1 ">
                   <svg  id="menuIconId" class="rotate-[270deg] " width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" >
@@ -134,16 +141,16 @@
           <!-- Buttons container in left section  -->
           <div class=" flex justify-center w-full sm:h-full">
             <div class="items-center sm:items-start h-full justify-center flex flex-col gap-4 w-full ">
-              <!-- max-w-[80%] and w-96 same as button below --> 
-              <a class="//w-72 w-96 max-w-[80%] font-semibold text-center text-xl lg:text-2xl cursor-pointer leading-5 py-5 px-8 text-white bg-[#0b5cff] border-solid border-[1px] border-[#0b5cff] rounded-full box-border hover:bg-white hover:text-[#0b5cff]"
+              <!-- max-w-[90%] and w-96 same as button below --> 
+              <a class="//w-72 w-full sm:w-96 max-w-[90%] sm:max-w-[80%] font-semibold text-center text-lg lg:text-xl cursor-pointer leading-5 py-5 px-8 text-white bg-[#0b5cff] border-solid border-[1px] border-[#0b5cff] rounded-full box-border hover:bg-white hover:text-[#0b5cff]"
               href="">Install Zoom</a>
             </div>
           </div>
 
            <!-- 0.375rem is half of text-lg line-height... i.e. extra space below Discover AI Companion -->
            <div class="flex w-full justify-center sm:justify-start">
-              <!-- max-w-[80%] and w-96 same as Install Zoom button --> 
-            <div class="max-w-[80%] //w-fit w-96">
+              <!-- max-w-[90%] and w-96 same as Install Zoom button --> 
+            <div class="max-w-[90%] sm:max-w-[80%] //w-fit w-full sm:w-96">
               <a class="flex items-center border-[1px] box-border border-solid rounded-3xl p-1 bg-white hover:bg-[#9abbff] text-xs lg:text-sm w-full"
                 href="https://www.zoom.com/en/lp/zoom-ai-whitepaper" target="_blank">
                 <span class="pr-2">
